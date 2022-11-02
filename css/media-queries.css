@@ -1,3 +1,8 @@
+*{
+    margin: .25em;
+    font-family: sans-serif, Helvetica;
+}
+
 li {
     list-style-type: none;
     padding: .25em;
@@ -8,13 +13,21 @@ li {
 }
 
 @media screen and (min-width: 300px) and (max-width:500px) {
+    .alert-info{
+        display: flex;
+        justify-content: center;
+        background-color: #D7FEFE;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+
+    }
     li {
         display: flex;
         justify-content: center;
-        flex-direction: column;
         background: lightgrey;
         margin: 5px;
-
     }
     .nav-links {
         display: flex;
@@ -26,6 +39,22 @@ li {
         justify-content: center;
         align-content: stretch;
         width: 100%;
+    }
+    img{
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .main{
+        margin: 1.25em 0;
+    }
+    .sub-section{
+        margin: 1.25em 0;
+    }
+    footer{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
     }
 }
 
