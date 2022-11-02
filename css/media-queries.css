@@ -1,5 +1,5 @@
 * {
-    margin: .25em;
+    margin: .5em;
     font-family: sans-serif, Helvetica;
     box-sizing: border-box;
 }
@@ -13,10 +13,12 @@ li {
 }
 .nav-links {
     display: flex;
-
 }
 .hidden-on-desktop {
     display: none;
+}
+.sub-section {
+    font-style: italic;
 }
 
 @media screen and (min-width: 300px) and (max-width:600px) {
@@ -71,7 +73,6 @@ li {
     }
     .sub-section {
         margin: 2em 0;
-        font-style: italic;
     }
     footer {
         margin-top: 5em;
@@ -93,25 +94,28 @@ li {
     }
     h1 {
         float: left;
+        margin: 0 0 1.5em 0;
+        font-size: 2.5em;
     }
     img {
         display: block;
-        margin: auto;
+        margin: 0 auto 1.5em;
         width: 100%;
     }
-    .main{
+    .main {
         float: left;
-        width: calc(50% - .5em);
+        width: calc(65% - 1em);
     }
-    .sub-section{
+    .sub-section {
         float: right;
-        width: calc(50% - .5em);
+        width: calc(35% - 1em);
     }
-    footer{
-        margin-top: 10em;
+    footer {
+        margin-top: 25em;
         margin-bottom: .5em;
     }
-    h2{
+    h2 {
+        margin: auto;
         padding-bottom: 1em;
     }
 }
